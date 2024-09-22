@@ -1,0 +1,155 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #131313;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #252525;
+}
+
+.logo img {
+    width: 150px;
+    background-color: #F9ED32;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: #2C2A2A;
+    list-style: none;
+    padding: 10px;
+    z-index: 1;
+}
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li {
+    width: max-content;
+    margin: 5px;
+}
+.dropdown li a:hover {
+    color: #F9ED32;
+}
+
+.pre-book {
+    background-color: #F9ED32;
+    color: #131313;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #424242;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+#changing-word {
+    color: #F9ED32;
+    font-family: 'Poppins', sans-serif;
+}
+
+.usp-carousel {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #373737;
+}
+
+.usp-item {
+    max-width: 15%;
+}
+
+.usp-item h2 {
+    font-size: 1.5rem;
+    color: #F9ED32;
+}
+
+.vehicle-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #202020;
+}
+
+.vehicle-showcase img {
+    width: 80%;
+    max-width: 600px;
+}
+
+.vehicle-showcase .buy-now {
+    background-color: #F9ED32;
+    color: #131313;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #2C2A2A;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    
+}
+ li img{
+    width: 12px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+    
+}
+
+.footer-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    
+    
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE03 LITE Details</title>
+    <style>
+        body {
+            background-color: #252525;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        p {
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        th {
+            background-color: #ffcc00;
+            color: #252525;
+            padding: 15px;
+        }
+        td {
+            background-color: #333333;
+            padding: 12px;
+            text-align: center;
+        }
+        ul li {
+            color: #cccccc;
+            padding: 5px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            font-size: 36px;
+            padding: 20px 0;
+            font-weight: bold;
+            color: #252525;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        tr:nth-child(even) {
+            background-color: #444444;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">SE03 LITE</header>
+    <img id="bikeImage" src="/asset/SE03 LITE.jpeg" alt="image of the bike SE03 LITE">
+    <p class="highlight">Indulge in the perfect harmony of power and range with this Rhyno. 
+        Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge.
+        Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno.
+        Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.
+        Check out the other details below! GTX LITE    
+     </p>
+     <table border="1">
+        <thead>
+            <tr class="highlight">
+                <th>Warranty on electronics</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Battery</td>
+                <td>1.8Kwh</td>
+            </tr>
+            <tr>
+                <td>Max range (30 km/h)</td>
+                <td>100 km</td>
+            </tr>
+            <tr>
+                <td>Motor</td>
+                <td>1500W</td>
+            </tr>
+            <tr>
+                <td>Charging time</td>
+                <td>3 hours (12A)</td>
+            </tr>
+            <tr>
+                <td>Battery Warranty</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>Max speed</td>
+                <td>50 km/h</td> 
+            </tr>
+            <tr>
+                <td>Max range (Full speed)</td>
+                <td>60 km</td>     
+            </tr>
+            <tr>
+                <td>Max range (45 km/h)</td>
+                <td>90 km</td>  
+            </tr>
+        </tbody>
+    </table>
+    <p class="highlight">Indulge in the perfect harmony of power and range with this Rhyno. 
+        Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. 
+        Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. 
+        Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.
+        Check out the other details below! GTX LITE</p>
+        <table border="2">
+            <thead>
+                <tr class="highlight">
+                    <td>Other Key benefits</td>
+                    <td>
+                        <ul>
+                            <li>Fire-safe battery</li>
+                        <li>Range Prediction</li>
+                        <li>Comfortable and safe ride</li>
+                    </ul>
+                </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Battery features</td>
+                    <td>
+                        <ul>
+                            <li>LFP with 1500 cycles</li>
+                            <li>Active Balancing</li>
+                            <li>Waterproof (IP67)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Specfication</th>
+                    <td>Rhyno GTX Lite</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <script>
+        // Change the background color of the header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#333333';
+                header.style.color = '#ffcc00';
+            } else {
+                header.style.backgroundColor = '#ffcc00';
+                header.style.color = '#252525';
+            }
+        });
+
+        // Add a hover effect to the image
+        const bikeImage = document.getElementById('bikeImage');
+        bikeImage.addEventListener('mouseover', function() {
+            bikeImage.style.transform = 'scale(1.1)';
+            bikeImage.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+        });
+        bikeImage.addEventListener('mouseout', function() {
+            bikeImage.style.transform = 'scale(1)';
+            bikeImage.style.boxShadow = 'none';
+        });
+
+        // Highlight the text when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const paragraphs = document.querySelectorAll('.highlight');
+            paragraphs.forEach(paragraph => {
+                paragraph.style.backgroundColor = '#333';
+                paragraph.style.color = '#ffcc00';
+                paragraph.style.padding = '10px';
+                paragraph.style.borderRadius = '5px';
+                paragraph.style.transition = 'background-color 0.3s, color 0.3s';
+            });
+        });
+    </script>
+</body>
+</html>

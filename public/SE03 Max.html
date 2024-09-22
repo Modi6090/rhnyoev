@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE03 MAX Details</title>
+    <style>
+        body {
+            background-color: #252525;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        th {
+            background-color: #ffcc00;
+            color: #252525;
+            padding: 15px;
+        }
+        td {
+            background-color: #333333;
+            padding: 12px;
+            text-align: center;
+        }
+        ul li {
+            color: #cccccc;
+            padding: 5px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            font-size: 36px;
+            padding: 20px 0;
+            font-weight: bold;
+            color: #252525;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        tr:nth-child(even) {
+            background-color: #444444;
+        }
+    </style>
+</head>
+<body>
+    <header>SE03 MAX</header>
+    <img src="/asset/SE03 MAX.jpeg" alt="image of the bike SE03 Max">
+    <p>GTX MAX<br>Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-120 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhino. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn. Check out the other details below!</p>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Specfications</th>
+                <th>Rhyno SE03 MAX</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Battery</td>
+                <td>2.7Kwh</td>
+            </tr>
+            <tr>
+                <td>Battery features</td>
+                <td>
+                    <ul>
+                        <li>LFP with 1500 cycles</li>
+                        <li>Active Balancing</li>
+                        <li>Waterproof (IP67)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Battery warranty</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>Charging time</td>
+                <td>4 hours(12A)</td>
+            </tr>
+            <tr>
+                <td>Motor</td>
+                <td>2000W</td>
+            </tr>
+            <tr>
+                <td>Max speed</td>
+                <td>65Km/h</td>
+            </tr>
+            <tr>
+                <td>Warranty on electronics</td>
+                <td>1 Year</td>
+            </tr>
+            <tr>
+                <td>Max range(30Km/h)</td>
+                <td>120km</td>
+            </tr>
+            <tr>
+                <td>Max range(45Km/h)</td>
+                <td>90Km</td>
+            </tr>
+            <tr>
+                <td>Max range(full speed)</td>
+                <td>80km</td>
+            </tr>
+            <tr>
+                <td>Other Key benefits</td>
+                <td>
+                    <ul>
+                        <li>Fire-safe battery</li>
+                        <li>Range prediction</li>
+                        <li>Comfortable Ride</li>
+                        <li>Stable and Safe</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Highlight table row on hover
+        document.querySelectorAll('tr').forEach(row => {
+            row.addEventListener('mouseover', () => {
+                row.style.backgroundColor = '#555555';
+            });
+            row.addEventListener('mouseout', () => {
+                row.style.backgroundColor = '';
+            });
+        });
+
+        // Animate image on hover
+        const img = document.querySelector('img');
+        img.addEventListener('mouseover', () => {
+            img.style.transform = 'scale(1.1)';
+        });
+        img.addEventListener('mouseout', () => {
+            img.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>

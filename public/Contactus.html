@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+    body {
+        background-color: #252525;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    
+    header {
+        background-color: #ffcc00;
+        text-align: center;
+        font-size: 36px;
+        padding: 20px;
+        font-weight: bold;
+        color: #252525;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        padding: 20px;
+        line-height: 1.6;
+        text-align: center;
+        background-color: #333;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; 
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<body>
+    <header>CONTACT US</header>
+    <p>● Mail: <span class="tooltip">info@rhyno.in<span class="tooltiptext">Click to copy</span></span><br>
+        ● Mobile no.: <a href="#" id="phoneNumber">+91-9023987528</a><br>
+        ● Location: Rhyno Wheels Private Limited, Near UG Hostel Gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India.
+    </p>
+
+    <script>
+        // Tooltip for email address
+        const tooltip = document.querySelector('.tooltip');
+        tooltip.addEventListener('click', function() {
+            const email = 'info@rhyno.in';
+            navigator.clipboard.writeText(email).then(function() {
+                alert('Email address copied to clipboard!');
+            });
+        });
+
+        // Clickable phone number
+        document.getElementById('phoneNumber').addEventListener('click', function() {
+            alert('Call us at +91-9023987528');
+        });
+    </script>
+</body>
+</html>

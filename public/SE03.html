@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE03 - Rhyno Bikes</title>
+    <style>
+        body {
+            background-color: #252525;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            color: #e0e0e0;
+            padding: 0 15px;
+        }
+
+        table {
+            color: #ffffff;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            color: #ffcc00;
+            background-color: #333;
+        }
+
+        ul li {
+            color: #cccccc;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            font-size: 36px;
+            padding: 20px 0;
+            font-weight: bold;
+            color: #252525;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">SE03</header>
+    <img id="bikeImage" src="/asset/SE03.jpeg" alt="Image of the bike SE03">
+    <p>Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive link for GTX:
+        <br>a.Vehicle image
+        <br>b. Color selection buttons
+        <br>c. Textual details Rhyno GTX.
+        <br>Buy now 90-150 km range on a single charge.
+        Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.
+
+        Checkout the other details below!
+    </p>
+    <table border="1">
+        <thead>
+            <tr class="text">
+                <th>Warranty on electronics</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text">
+                <td>Battery</td>
+                <td>2.7Kwh</td>
+            </tr>
+            <tr class="text">
+                <td>Battery features</td>
+                <td>
+                    <ul>
+                        <li>LFP with 1500 cycles</li>
+                        <li>Active Balancing</li>
+                        <li>Waterproof (IP67)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="text">
+                <td>Battery warranty</td>
+                <td>3 Years</td>
+            </tr>
+            <tr class="text">
+                <td>Charging time</td>
+                <td>4 hours (12A)</td>
+            </tr>
+            <tr class="text">
+                <td>Motor</td>
+                <td>1500W</td>
+            </tr>
+            <tr class="text">
+                <td>Max speed</td>
+                <td>55Km/hr</td>
+            </tr>
+            <tr class="text">
+                <td>Warranty on electronics</td>
+                <td>1 Year</td>
+            </tr>
+            <tr class="text">
+                <td>Max range (30km/hr)</td>
+                <td>150Km</td>
+            </tr>
+            <tr class="text">
+                <td>Max range (45km/hr)</td>
+                <td>110Km</td>
+            </tr>
+            <tr class="text">
+                <td>Max range (Full speed)</td>
+                <td>90Km</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1">
+        <tr class="text">
+            <td>Other key benefits</td>
+            <td>
+                <ul>
+                    <li>Fire-safe battery</li>
+                    <li>Range prediction</li>
+                    <li>Comfortable ride</li>
+                    <li>Stable and safe</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Change the background color of the header on scroll
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#e0e0e0';
+                header.style.color = '#252525';
+            } else {
+                header.style.backgroundColor = '#ffcc00';
+                header.style.color = '#252525';
+            }
+        });
+
+        // Add a hover effect to the image
+        const bikeImage = document.getElementById('bikeImage');
+        bikeImage.addEventListener('mouseover', function () {
+            bikeImage.style.transform = 'scale(1.1)';
+        });
+        bikeImage.addEventListener('mouseout', function () {
+            bikeImage.style.transform = 'scale(1)';
+        });
+
+        // Highlight the text when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach(paragraph => {
+                paragraph.style.backgroundColor = '#333';
+                paragraph.style.color = '#ffcc00';
+                paragraph.style.padding = '10px';
+                paragraph.style.borderRadius = '5px';
+            });
+        });
+    </script>
+</body>
+
+</html>

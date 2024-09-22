@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rhyno EV</title>
+    <style>
+        body {
+            background-color: #252525;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #e0e0e0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            font-size: 36px;
+            padding: 20px 0;
+            font-weight: bold;
+            color: #252525;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        p {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 18px;
+            background-color: #333333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        p:hover {
+            transform: scale(1.02);
+            background-color: #444444;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">About Us</header>
+    <p id="aboutUsText">
+        Established in 2019 by an automotive engineer with a vision for sustainable and robust
+        mobility solutions, <span class="highlight">Rhyno EV</span> is not just a company; it's a collective effort of a dynamic team
+        of young individuals passionately driving innovation in the electric vehicle industry. We
+        believe in engineering solutions that solve problems.
+        With our first product, we've taken a bold step to create something more than just a vehicle;
+        it's a unique experience of elegance, comfort, and style, addressing the pitfalls of
+        conventional electric scooters. Our design prioritizes safety, eliminating concerns of fires and
+        ensuring a longer battery lifespan with our battery technology. Perfectly suited for fleet
+        operators, especially in tourist-centric locations like Goa, our rugged yet aesthetically
+        appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new
+        era in sustainable and dependable electric transportation.
+    </p>
+
+    <script>
+        // Change header color on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#333333';
+                header.style.color = '#ffcc00';
+            } else {
+                header.style.backgroundColor = '#ffcc00';
+                header.style.color = '#252525';
+            }
+        });
+
+        // Animate the "About Us" text when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutUsText = document.getElementById('aboutUsText');
+            aboutUsText.style.opacity = 0;
+            aboutUsText.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                aboutUsText.style.transition = 'opacity 1s, transform 1s';
+                aboutUsText.style.opacity = 1;
+                aboutUsText.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
